@@ -1,0 +1,93 @@
+$off-white: #F2F1F1;
+$off-white-80: #F2F1F1CC;
+$dark-red: #5B1B17;
+$light-blue: #8AA4D3;
+$light-blue-60: #8AA4D399;
+
+@font-face {
+    font-family: 'Zilla Slab Medium';
+    src: url("../../../assets/Fonts/ZillaSlab-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../../assets/Fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+.main {
+    height: 94.9vh;
+    background-color: $off-white;
+
+    #form {
+        margin: 4em auto 0 auto;
+        padding-top: 7em;
+
+        .plain {
+            font-family: "Montserrat";
+            font-size: 24px;
+            text-align: center;
+            padding-bottom: 1em;
+        }
+        
+        form {
+            text-align: center;
+            font-family: "Zilla Slab";
+            font-size: 24px;
+
+            label {
+                text-align: left;
+            }
+
+            input {
+                margin-top: 1em;
+                padding: 0.7em 1em;
+                font-size: 18px;
+                font-family: "Montserrat";
+            }
+
+            input[type=text], input[type=password] {
+                border: 1px solid $off-white;
+                border-radius: 10px;
+            }
+
+            input[type=checkbox] {
+                width: 2em;
+                height: 1em;
+                border: 1px solid $off-white;
+                border-radius: 8px;
+                background-color: $dark-red;
+            }
+            
+            input[type=submit] {
+                border: 1px solid $light-blue-60;
+                border-radius: 8px;
+                background-color: $light-blue-60;
+                cursor: pointer;
+                font-size: 20px;
+            }
+        }
+
+        #links {
+            display: flex;
+
+            .link {
+                width: 50%;
+                padding: 3em 14em;
+    
+                a {
+                    font-size: 20px;
+                    font-family: "Montserrat";
+                    color: $dark-red;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    height: 7em;
+    width: 100%;
+    background-image: url("../../../assets/blueberries.png");
+}

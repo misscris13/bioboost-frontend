@@ -22,6 +22,7 @@ import { ResultsComponent } from './results/results.component';
     CommonModule
   ],
   exports: [
+    PlansComponent,
     LoginComponent,
     IntroComponent,
     InfoComponent,

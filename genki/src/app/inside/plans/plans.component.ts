@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-plans',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class PlansComponent {
 
+    constructor(private router:Router) {
+
+    }
+
+    goToPage(route:string) {
+        this.router.navigate([route]);
+    }
 }

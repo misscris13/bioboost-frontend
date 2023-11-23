@@ -1,1 +1,17 @@
-<p>plans works!</p>
+<div id="plans">
+    <div id="cards">
+        <div class="card" (click)="goToPage('/')">
+            <!-- <a routerLink="/" routerLinkActive="active"></a> -->
+            <p class="title">free.</p>
+            <p class="plain">try the online microbiome test</p>
+        </div>
+        <div class="card" (click)="goToPage('/')">
+            <p class="title">genki.</p>
+            <p class="plain">try the full genki experience </p>
+        </div>
+        <div class="card" (click)="goToPage('/login')">
+            <p class="title">be plus.</p>
+            <p class="plain">log in with your Be Plus account</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,125 @@
+$off-white: #F2F1F1;
+$dark-red: #5B1B17;
+
+#microbiome {
+    height: 100%;
+    background-image: url("../../../assets/blueberries.png");
+    
+    #definition {
+        margin: -25px 6em 0 50%;
+        padding-bottom: 9em;
+        text-align: right;
+        color: $off-white;
+
+        h1 {
+            padding-top:1em;
+            font-family: "Zilla Slab";
+            font-weight: lighter;
+            font-size: 130px;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-family: "Montserrat";
+            font-size: 30px;
+            margin-top: 0;
+        }
+    }
+
+    #info {
+        text-align: center;
+        background-color: $off-white;
+        color: $dark-red;
+        padding: 1em 0;
+    
+        h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 1em 0;
+            text-align: center;
+            font-family: "Zilla Slab";
+            font-weight: lighter;
+            color: $dark-red;
+            font-size: 40px;
+        }
+    
+        #hiw-sub {
+            font-family: "Montserrat";
+            font-size: 20px;
+            margin: 0 auto 3em auto;
+            width: 40%;
+        }
+    
+        img {
+            width: 60%;
+            margin-left: -25px;
+            margin-bottom: 2em;
+        }   
+    }
+
+    #cards {
+        background-color: $off-white;
+        height: 400px;
+        padding: 0 2em;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        
+        .card {
+            width: 20%;
+
+            img {
+                width: 20%;
+                position: absolute;
+            }
+            
+            p { 
+                position: absolute;
+                padding-top: 100%;
+                z-index: 200;
+            }
+
+            .fade {
+                width: 20%;
+            }
+            
+            .black {
+                width: 20%;
+            }
+        }
+
+        #card1 {
+            
+        }
+    }
+}
+
+#how-it-works {
+    background-color: $off-white;
+    
+    h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 0 1em 1em;
+        text-align: left;
+        font-family: "Zilla Slab";
+        font-weight: lighter;
+        color: $dark-red;
+        font-size: 40px;
+    }
+}
+
+.italic {
+    font-style: italic;
+}
+
+.quote {
+    font-family: "Zilla Slab";
+    font-style: italic;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0 auto 3em auto;
+    width: 40%;
+}

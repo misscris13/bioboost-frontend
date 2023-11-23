@@ -1,0 +1,59 @@
+$nav-color: #000000;
+$off-white: #F2F1F1;
+
+@font-face {
+    font-family: 'Zilla Slab Medium';
+    src: url("../../../assets/Fonts/ZillaSlab-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../../assets/Fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+mat-toolbar-row {  
+    background-color: $nav-color;
+}
+
+#logo {
+    padding: 50% 0;
+    height: 30px;
+}   
+
+.header_container {
+    display: flex;
+    width: 100%;
+
+    .header_menu {
+        flex-grow: 4;
+        display: flex;
+        flex-direction: row;
+
+        a {
+            color: $off-white;
+            font-family: 'Montserrat';
+            font-size: 18px;
+            text-decoration: none;
+            vertical-align: sub;
+        }
+
+        .header_button {
+            margin-left: 2em;
+            margin-right: 2em;
+            padding: 1em 0;
+            color: $off-white;
+        }
+
+        .header_login {
+            color: $off-white;
+            font-family: 'Montserrat';
+            font-size: 18px;
+            margin-left: auto;
+            margin-right: 2em;
+            padding: 1em 0;
+
+            .mat-icon {
+                vertical-align: sub;
+            }
+        }
+    }
+}

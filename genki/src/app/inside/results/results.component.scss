@@ -1,0 +1,103 @@
+$off-white: #F2F1F1;
+$off-white-60: #F2F1F199;
+$dark-red: #5B1B17;
+$light-blue: #8AA4D3;
+$light-blue-60: #8AA4D399;
+
+@font-face {
+    font-family: 'Zilla Slab Medium';
+    src: url("../../../assets/Fonts/ZillaSlab-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../../assets/Fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+.main {
+    height: 94.9vh;
+    background-color: $off-white;
+    margin: 0.9em auto 0 auto;
+    padding-top: 7em;
+    position: absolute;
+    width: 100%;
+    background-image: url("../../../assets/blueberries.png");
+}
+
+.main2 {
+    height: 94.9vh;
+    background-color: $off-white;
+    margin: 0.9em auto 0 auto;
+    padding-top: 7em;
+    position: absolute;
+    width: 100%;
+}
+
+.title {
+    font-family: "Zilla Slab";
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 1em;
+    color: $off-white;
+    width: 70%;
+    margin: 0 0 0 4em;
+}
+
+.title2 {
+    font-family: "Zilla Slab";
+    font-size: 40px;
+    text-align: left;
+    padding-bottom: 1em;
+    color: black;
+    width: 70%;
+    margin: -1em 0 0 4em;
+}
+
+.plain {
+    font-family: "Montserrat";
+    font-size: 28px;
+    text-align: center;
+    padding: 2em 15em;
+    color: $off-white;
+}
+
+.cards {
+    height: 20em;
+    font-family: "Montserrat";
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3em;
+    
+    .card {
+        width: 14em;
+        height: 17em;
+        border-radius: 20px;
+        padding: 1em;
+        margin: 0.5em;
+    }
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    height: 7em;
+    width: 100%;
+    background-color: $off-white;
+    text-align: center;
+    cursor: pointer;
+
+    .plain {
+        position: relative;
+        bottom: 1em;
+        padding-bottom: 0;
+    }
+    
+    #arrow {
+        position: relative;
+        background-image: url("../../../assets/buttons/arrow.png");
+        background-size: contain;
+        width: 1em;
+        height: 1em;
+        margin: auto;
+    }
+}

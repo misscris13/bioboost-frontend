@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ResultsComponent {
 
+    name:string;
+    
+    ngOnInit() {
+        this.onLoad();
+    }
+
+    onLoad() {
+        this.name = window.sessionStorage.getItem("name");
+    }
 }

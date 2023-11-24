@@ -1,1 +1,47 @@
-<p>results works!</p>
+<div id="intro" class="main" style="display:none;">
+    <div class="title">
+        <b>for {{name}}</b><br>
+        here are your recommendations
+    </div>
+    
+    <div class="plain">
+        they are based on your main needs 
+        - <b>stress, digestion and oral health</b> - 
+        and on the results of your Be Plus 
+        <b>genomic and habits tests</b>.
+    </div>
+</div>
+
+<div id="results" class="main2" style="display:;">
+    <div class="title2">
+        <b>your essentials</b><br>
+        the must-haves in your daily wellness routine. specific to your priority needs.
+    </div>
+
+    <div class="cards">
+        <div class="card" style="background-color: aqua;">
+            food
+        </div>
+        <div class="card" style="background-color: green;">
+            food
+        </div>
+        <div class="card" style="background-color: red;">
+            food
+        </div>
+        <div class="card" style="background-color: orange;">
+            food
+        </div>
+    </div>
+</div>
+
+<div id="footer" onclick="showNext('intro', 'results');showNext('footer1', 'footer2')">
+    <div class="plain" id="footer1" style="color:black;display:;">
+        see the results
+        <div id="arrow"></div>
+    </div>
+
+    <div class="plain" id="footer2" style="color:black;display:none;">
+        track my progress
+    </div>
+
+</div>

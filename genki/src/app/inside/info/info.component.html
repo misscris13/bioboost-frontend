@@ -1,1 +1,45 @@
-<p>info works!</p>
+<div id="info1" class="main" style="display:;">
+    <div class="title">
+        did you know that in our gut we have more than <b>40 
+        trillion microbes?</b>, this is what we call the <i>microbiome</i>.
+    </div>
+
+    <div class="buttons">
+        <button class="button" onclick="showNext('info1', 'info2')">continue</button>
+    </div>
+</div>
+
+<div id="info2" class="main" style="display:none;">
+    <div class="title">
+        current studies show that there is a <i>direct relationship</i> between 
+        <b>mental well-being and our gut.</b>
+    </div>
+
+    <div class="buttons">
+        <button class="button" onclick="showNext('info2', 'info3')">continue</button>
+    </div>
+</div>
+
+<div id="info3" class="main" style="display:none;">
+    <div class="title">
+        this is what experts call the <b>gut-brain axis.</b>
+    </div>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('info3', 'info4')">continue</button>
+    </div>
+</div>
+
+<div id="info4" class="main" style="display:none;">
+    <div class="title">
+        in genki, we use <b>technology</b> to explore this innovative connection and 
+        <b>improve your overall well-being</b> at a molecular level by providing 
+        <b>personalized food recommendations.</b>
+    </div>
+
+    <div class="buttons">
+        <button class="button" (click)="goToPage('/questionnaire')">continue</button>
+    </div>
+</div>
+
+<div id="footer"></div>

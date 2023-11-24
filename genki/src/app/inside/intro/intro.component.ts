@@ -13,11 +13,13 @@ export class IntroComponent {
     constructor(private router:Router) {};
 
     setName(n:string) : void {
+       
         this.name = n;
-        console.log("holi");
+        window.sessionStorage.setItem("name", n);
     } 
 
     goToPage(route:string) {
+
         this.router.navigate([route]);
     }
 }

@@ -1,1 +1,440 @@
-<p>questionnaire works!</p>
+<div id="divReady" class="main" style="display:none;">
+    <p class="title">
+        ready to boost your energy?!
+    </p>
+
+    <div class="buttons">
+        <button class="button" onclick="showNext('divReady', 'divSex')">start now</button>
+    </div>
+</div>
+
+<div id="divSex" class="main" style="display:none;">
+    <p class="title">
+        what's your biological sex?
+    </p>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divSex', 'divAge')">male</button>
+        <button class="button" onclick="showNext('divSex', 'divAge')">female</button>
+    </div>
+</div>
+
+<div id="divAge" class="main" style="display:none;">
+    <p class="title">
+        how old are you?
+    </p>
+
+    <input type="text" name="name" placeholder="write here..." autocomplete="off">
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divAge', 'divConfirm')">continue</button>
+    </div>
+</div>
+
+<div id="divConfirm" class="main" style="display:none;">
+    <p class="title">
+        great, {{name}}! now let's talk about your <b>objectives</b> ;)
+    </p>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divConfirm', 'divObjectives')">continue</button>
+    </div>
+</div>
+
+<div id="divObjectives" class="main" style="display:none;">
+    <p class="title">
+        what do you want to improve?
+    </p>
+
+    <p class="plain">
+        select your objectives and priority needs; we will build 
+        your tailored recommendation to provide you with the best possible
+    </p>
+    
+    <div class="buttons select">
+        <div class="row">
+            <div class="elem">
+                <button class="button" id="brain" onclick="pressButtonBlue('brain')"></button>
+                <p class="plain">
+                    brain
+                </p>
+            </div>
+            <div class="elem">
+                <button class="button" id="energy" onclick="pressButtonBlue('energy')"></button>
+                <p class="plain">
+                    energy
+                </p>
+            </div>
+            <div class="elem">
+                <button class="button" id="skin" onclick="pressButtonBlue('skin')"></button>
+                <p class="plain">
+                    skin
+                </p>
+            </div>
+            <div class="elem">
+                <button class="button" id="digestion" onclick="pressButtonBlue('digestion')"></button>
+                <p class="plain">
+                    gut
+                </p>
+            </div>
+            <div class="elem">
+                <button class="button" id="stress" onclick="pressButtonBlue('stress')"></button>
+                <p class="plain">
+                    stress
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="elem">
+                <button class="button" id="oral" onclick="pressButtonBlue('oral')"></button>
+                <p class="plain">
+                    oral
+                </p>
+            </div>
+            <div class="elem">
+                <button class="button" id="slim" onclick="pressButtonBlue('slim')"></button>
+                <p class="plain">
+                    slim
+                </p>
+            </div>
+            <div class="elem">
+                <button class="button" id="sport" onclick="pressButtonBlue('sport')"></button>
+                <p class="plain">
+                    sport
+                </p>
+            </div>
+            <div class="elem">
+                <button class="button" id="sleep" onclick="pressButtonBlue('sleep')"></button>
+                <p class="plain">
+                    sleep
+                </p>
+            </div>
+            <div class="elem">
+                <button class="button" id="sexual" onclick="pressButtonBlue('sexual')"></button>
+                <p class="plain">
+                    sexual
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="button" onclick="showNext('divObjectives', 'divDigestion1')">continue</button>
+    </div>
+</div>
+
+<div id="divDigestion1" class="main" style="display:none;">
+    <div class="logo" style="background-image: url('../../../assets/buttons/digestion.png');"></div>
+    
+    <p class="title2">
+        where do your digestion problems manifest themselves?
+    </p>
+    
+    <div class="buttons">
+        <button class="button" id="dig1-1" onclick="pressButton('dig1-1')">
+            <b>in the stomach</b><br>
+            acidity, burning, feeling of fullness...
+        </button>
+        <button class="button" id="dig1-2" onclick="pressButton('dig1-2')">
+            <b>in the intestine</b><br>
+            inflammation, pain, bloating, swelling...
+        </button>
+        <button class="button" id="dig1-3" onclick="pressButton('dig1-3')">
+            <b>in the colon</b><br>
+            constipation, diarrhea, flatulence...
+        </button>
+    </div>
+
+    <div class="buttons">
+        <button class="button" onclick="showNext('divDigestion1', 'divDigestion2')">continue</button>
+    </div>
+</div>
+
+<div id="divDigestion2" class="main" style="display:none;">
+    <div class="logo" style="background-image: url('../../../assets/buttons/digestion.png');"></div>
+    
+    <p class="title2">
+        how often do you go to the toilet?
+    </p>
+
+    <div class="buttons">
+        <button class="button" id="dig2-1" onclick="pressButton('dig2-1')">
+            <b>regularly</b><br>
+        </button>
+        <button class="button" id="dig2-2" onclick="pressButton('dig2-2')">
+            <b>infrequently</b><br>
+        </button>
+        <button class="button" id="dig2-3" onclick="pressButton('dig2-3')">
+            <b>too often</b><br>
+        </button>
+    </div>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divDigestion2', 'divOral1')">continue</button>
+    </div>
+</div>
+
+<div id="divOral1" class="main" style="display:none;">
+    <div class="logo" style="background-image: url('../../../assets/buttons/oral.png');"></div>
+    
+    <p class="title2">
+        would you say you have bad breath?
+    </p>
+
+    <div class="buttons">
+        <button class="button" id="oral1-1" onclick="pressButton('oral1-1')">
+            <b>yes</b><br>
+        </button>
+        <button class="button" id="oral1-2" onclick="pressButton('oral1-2')">
+            <b>no</b><br>
+        </button>
+    </div>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divOral1', 'divOral2')">continue</button>
+    </div>
+</div>
+
+<div id="divOral2" class="main" style="display:none;">
+    <div class="logo" style="background-image: url('../../../assets/buttons/oral.png');"></div>
+    
+    <p class="title2">
+        have you ever had cavities?
+    </p>
+
+    <div class="buttons">
+        <button class="button" id="oral2-1" onclick="pressButton('oral2-1')">
+            <b>yes</b><br>
+        </button>
+        <button class="button" id="oral2-2" onclick="pressButton('oral2-2')">
+            <b>no</b><br>
+        </button>
+    </div>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divOral2', 'divStress1')">continue</button>
+    </div>
+</div>
+
+<div id="divStress1" class="main" style="display:none;">
+    <div class="logo" style="background-image: url('../../../assets/buttons/stress.png');"></div>
+    
+    <p class="title2">
+        how does your stress manifest itself?
+    </p>
+    
+    <div class="buttons">
+        <button class="button" id="stress1-1" onclick="pressButton('stress1-1')">
+            <b>fatigue</b><br>
+            from working until late in the night
+        </button>
+        <button class="button" id="stress1-2" onclick="pressButton('stress1-2')">
+            <b>feeling of mental exhaustion</b><br>
+            constant stress
+        </button>
+        <button class="button" id="stress1-3" onclick="pressButton('stress1-3')">
+            <b>compulsive cravings</b><br>
+            sudden need to take sugar
+        </button>
+        <button class="button" id="stress1-4" onclick="pressButton('stress1-4')">
+            <b>none of these symptoms</b><br>
+            i just want to feel calmer
+        </button>
+    </div>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divStress1', 'divStress2')">continue</button>
+    </div>
+</div>
+
+<div id="divStress2" class="main" style="display:none;">
+    <div class="logo" style="background-image: url('../../../assets/buttons/stress.png');"></div>
+    
+    <p class="title2">
+        how often do you feel stressed?
+    </p>
+
+    <div class="buttons">
+        <button class="button" id="stress2-1" onclick="pressButton('stress2-1')">
+            <b>rarely</b><br>
+        </button>
+        <button class="button" id="stress2-2" onclick="pressButton('stress2-2')">
+            <b>from time to time</b><br>
+        </button>
+        <button class="button" id="stress2-3" onclick="pressButton('stress2-3')">
+            <b>almost always</b><br>
+        </button>
+    </div>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divStress2', 'divAllergies')">continue</button>
+    </div>
+</div>
+
+<div id="divAllergies" class="main" style="display:none;">
+    <p class="title2">
+        do you have any allergies or intollerances?
+    </p>
+    
+    <div class="buttons select">
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="all1" onclick="pressButtonWhite('all1')">none</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all2" onclick="pressButtonWhite('all2')">dairy products</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all3" onclick="pressButtonWhite('all3')">egg</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="all4" onclick="pressButtonWhite('all4')">fish</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all5" onclick="pressButtonWhite('all5')">seafood</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all6" onclick="pressButtonWhite('all6')">peanuts</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="all7" onclick="pressButtonWhite('all7')">soy</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all8" onclick="pressButtonWhite('all8')">gluten</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all9" onclick="pressButtonWhite('all9')">nuts</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="all10" onclick="pressButtonWhite('all10')">celery</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all11" onclick="pressButtonWhite('all11')">mustard</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all12" onclick="pressButtonWhite('all12')">sesame seeds</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="all13" onclick="pressButtonWhite('all13')">SO2 and sulfites</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all14" onclick="pressButtonWhite('all14')">lupins</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="all15" onclick="pressButtonWhite('all15')">shellfish</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="button" onclick="showNext('divAllergies', 'divDiet')">continue</button>
+    </div>
+</div>
+
+<div id="divDiet" class="main" style="display:;">
+    <p class="title2">
+        do you follow a specific diet?
+    </p>
+    
+    <div class="buttons select">
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="diet1" onclick="pressButtonWhite('diet1')">none</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="diet2" onclick="pressButtonWhite('diet2')">paleo</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="diet3" onclick="pressButtonWhite('diet3')">vegan</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="diet4" onclick="pressButtonWhite('diet4')">ketogenic</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="diet5" onclick="pressButtonWhite('diet5')">vegetarian</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="diet6" onclick="pressButtonWhite('diet6')">flexitarian</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="diet7" onclick="pressButtonWhite('diet7')">gluten-free</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="diet8" onclick="pressButtonWhite('diet8')">dairy-free</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divDiet', 'divSituations')">continue</button>
+    </div>
+</div>
+
+<div id="divSituations" class="main" style="display:none;">
+    <p class="title2">
+        do you find yourself in one of these situations?
+    </p>
+    
+    <div class="buttons select" id="situations">
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="situ1" onclick="pressButtonWhite('situ1')">renal insufficiency</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="situ2" onclick="pressButtonWhite('situ2')">liver problems</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="situ3" onclick="pressButtonWhite('situ3')">heart problems</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="situ4" onclick="pressButtonWhite('situ4')">ulcers</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="situ5" onclick="pressButtonWhite('situ5')">thyroid problems</button>
+            </div>
+            <div class="elem long">
+                <button class="button long" id="situ6" onclick="pressButtonWhite('situ6')">depression</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="elem long">
+                <button class="button long" id="situ7" onclick="pressButtonWhite('situ7')">none</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="buttons">
+        <button class="button" onclick="showNext('divSituations', 'divEnd')">continue</button>
+    </div>
+</div>
+
+<div id="divEnd" class="main" style="display:none;">
+    <p class="title2">
+        your recommendations are <i>ready ;)</i>
+    </p>
+
+    <div class="buttons">
+        <button class="button" (click)="goToPage('/info')">continue</button>
+    </div>
+</div>
+
+<div id="footer"></div>

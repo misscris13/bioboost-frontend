@@ -1,0 +1,232 @@
+$off-white: #F2F1F1;
+$off-white-80: #F2F1F1CC;
+$dark-red: #5B1B17;
+$light-blue: #8AA4D3;
+$light-blue-60: #8AA4D399;
+
+@font-face {
+    font-family: 'Zilla Slab Medium';
+    src: url("../../../assets/Fonts/ZillaSlab-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../../../assets/Fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+.main {
+    height: 94.9vh;
+    background-color: $off-white;
+    margin: 1em auto 0 auto;
+    padding-top: 7em;
+    position: absolute;
+    width: 100%;
+    vertical-align: super;
+    text-align: center;
+}
+
+.title {
+    font-family: "Montserrat";
+    font-size: 30px;
+    text-align: center;
+    padding: 3em 0 0 0;
+    color: $light-blue;
+}
+
+.title2 {
+    font-family: "Montserrat";
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+
+.plain {
+    font-family: "Montserrat";
+    font-size: 25px;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.buttons {
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 5em;
+    
+    .button {
+        font-family: "Montserrat";
+        display: inline-block;
+        margin: 0 3em;
+        padding: 1em;
+        border-radius: 15px;
+        border: 1px solid black;
+        width: 10em;
+        font-size: 22px;
+        text-align: center;
+        cursor: pointer;
+        transition-duration: 0.4s;
+    }
+
+    .button:hover {
+        background-color: $light-blue-60;
+    }
+    
+    .button:active {
+        background-color: $light-blue;
+    }
+}
+
+input {
+    margin: 0 auto 1em auto;
+    padding: 0.7em 1em;
+    font-size: 18px;
+    width: 15em;
+    font-family: "Montserrat";
+}
+
+input[type=text] {
+    border: 1px solid $off-white;
+    border-radius: 10px;
+}
+
+#divObjectives {
+    
+    text-align: center;
+    padding-top: 2em;
+
+    .title {
+        padding-top: 0;
+    }
+
+    .plain {
+        width: 70%;
+        margin: auto;
+        padding-bottom: 1em;
+    }
+
+}
+
+.select {
+
+    margin-bottom: 1em;
+
+    .row {
+        display:block;
+        justify-content: space-between;
+        width: 80%;
+        padding: 1em 10% 0 10%;
+
+        .elem {
+            font-family: "Montserrat";
+            font-size: 22px;
+            display: inline-block;
+            margin: 0 1em;
+            width: auto;
+            text-align: center;
+            
+            .button {
+                font-size: 22px;
+                text-align: center;
+                width: 5em;
+                height: 5em;
+                margin: 0;
+                background-color: $light-blue-60;
+                border: 0px solid;
+            }
+            
+            .long {
+                font-size: 22px;
+                background-color: white;
+                height: 3em;
+                vertical-align: middle;
+                width: 10em;
+            }
+
+            .plain {
+                padding: 0;
+                text-align: center;
+                width: 100%;
+            }
+
+            #brain {
+                background-image: url("../../../assets/buttons/brain.png");
+                background-size: contain;
+            }
+            
+            #energy {
+                background-image: url("../../../assets/buttons/energy.png");
+                background-size: contain;
+            }
+            
+            #skin {
+                background-image: url("../../../assets/buttons/skin.png");
+                background-size: contain;
+            }
+            
+            #digestion {
+                background-image: url("../../../assets/buttons/digestion.png");
+                background-size: contain;
+            }
+            
+            #stress {
+                background-image: url("../../../assets/buttons/stress.png");
+                background-size: contain;
+            }
+            
+            #oral {
+                background-image: url("../../../assets/buttons/oral.png");
+                background-size: contain;
+            }
+            
+            #slim {
+                background-image: url("../../../assets/buttons/slim.png");
+                background-size: contain;
+            }
+            
+            #sport {
+                background-image: url("../../../assets/buttons/sport.png");
+                background-size: contain;
+            }
+            
+            #sleep {
+                background-image: url("../../../assets/buttons/sleep.png");
+                background-size: contain;
+            }
+            
+            #sexual {
+                background-image: url("../../../assets/buttons/sexual.png");
+                background-size: contain;
+            }
+        }
+    }
+}
+
+#situations {
+    .row {
+        .elem {
+            .button {
+                height: fit-content;
+            }
+        }
+    }
+}
+
+#divEnd {
+    .title2 {
+        padding-top: 5em;
+    }
+}
+
+.logo {
+    background-size: contain;
+    text-align: center;
+    width: 5em;
+    height: 5em;
+    margin: auto;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    height: 7em;
+    width: 100%;
+    background-image: url("../../../assets/blueberries.png");
+}

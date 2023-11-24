@@ -1,8 +1,8 @@
-<div id="divName" class="main" style="opacity: 0;">
+<div id="divName" class="main" style="display:;">
     <p class="title">first of all, what's your name?</p>
 
     <div id="nameForm">
-        <form id="name">
+        <form id="name" autocomplete="off">
             <div id="data">
                 <input type="checkbox" name="data">
                 <label for="data" id="dataLabel">
@@ -11,27 +11,70 @@
                     to create my personalized genki food list.
                 </label><br><br>
             </div>
-            <input type="text" name="name" placeholder="write here..."><br><br>
-            <input type="submit" value="confirm">
+            <input #name type="text" name="name" placeholder="write here..." (change)="setName(name.value)"><br><br>
         </form>
+        <div class="buttons">
+            <button class="button" onclick="showNext('divName', 'divBeplus')">confirm</button>
+        </div>
     </div>
 </div>
 
-<div id="divBeplus" class="main">
+<div id="divBeplus" class="main" style="display:none;">
     <p class="title">
-        [name] in your Be Plus experience, you already completed:
+        {{name.value}}, in your Be Plus experience, you already completed:
     </p>
     <div class="buttons">
-        <div class="button">genomic test</div>
-        <div class="button">habits test</div>
+        <button class="button" id="genomic" onclick="pressButton('genomic')">genomic test</button>
+        <button class="button" id="habits" onclick="pressButton('habits')">habits test</button>
     </div>
 
     <p class="title">
-        complete the <b>microbiome online test</b> to get a full
+        complete the <b>microbiome online test</b> to get a fully
         customized experience
     </p>
     <div class="buttons">
-        <div class="button">start now</div>
+        <button class="button" onclick="showNext('divBeplus', 'divKnow')">start now</button>
+    </div>
+</div>
+
+<div id="divKnow" class="main" style="display:none;">
+    <p class="title">
+        {{name.value}}, about the microbiome, you'd say...
+    </p>
+    <div class="buttons">
+        <button class="button" id="informed" onclick="showNext('divKnow', 'divInformed')"><b>i'm informed</b> <br> i know more than the average person</button>
+        <button class="button" id="curious" onclick="showNext('divKnow', 'divCurious')"><b>i'm curious</b> <br> i want to know more about it</button>
+        <button class="button" id="skeptic" onclick="showNext('divKnow', 'divSkeptic')"><b>i'm skeptic</b> <br> i'm not convinced yet</button>
+    </div>
+</div>
+
+<div id="divInformed" class="main" style="display:none;">
+    <p class="title">
+        wow {{name.value}}, you know so much! genki will still show you <b><i>something new ;)</i></b>
+    </p>
+
+    <div class="buttons">
+        <button class="button" (click)="goToPage('/info')">continue</button>
+    </div>
+</div>
+
+<div id="divCurious" class="main" style="display:none;">
+    <p class="title">
+        perfect, {{name.value}}! let's <b><i>satisfy your curiosity ;)</i></b>
+    </p>
+
+    <div class="buttons">
+        <button class="button" (click)="goToPage('/info')">continue</button>
+    </div>
+</div>
+
+<div id="divSkeptic" class="main" style="display:none;">
+    <p class="title">
+        don't worry, {{name.value}}! the genki experience has been <b><i>designed to convince</i></b> even the most skeptic ;)
+    </p>
+
+    <div class="buttons">
+        <button class="button" (click)="goToPage('/info')">continue</button>
     </div>
 </div>
 

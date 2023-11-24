@@ -16,7 +16,11 @@ $light-blue-60: #8AA4D399;
 .main {
     height: 94.9vh;
     background-color: $off-white;
-
+    margin: 1em auto 0 auto;
+    padding-top: 7em;
+    position: absolute;
+    width: 100%;
+    vertical-align: super;
 }
 
 .title {
@@ -31,8 +35,9 @@ $light-blue-60: #8AA4D399;
     justify-content: space-evenly;
     text-align: center;
     margin-bottom: 5em;
-
+    
     .button {
+        font-family: "Montserrat";
         display: inline-block;
         margin: 0 3em;
         padding: 1em;
@@ -41,15 +46,22 @@ $light-blue-60: #8AA4D399;
         width: 9em;
         font-size: 22px;
         text-align: center;
+        cursor: pointer;
+        transition-duration: 0.4s;
     }
+
+    .button:hover {
+        background-color: $light-blue-60;
+    }
+    
+    .button:active {
+        background-color: $light-blue;
+    }
+    
 }
 
 #divName {
-    margin: 1em auto 0 auto;
-    padding-top: 7em;
-    position: absolute;
-    width: 100%;
-
+    
     .title {
         width: 15em;
         margin: auto;
@@ -99,10 +111,27 @@ $light-blue-60: #8AA4D399;
 }
 
 #divBeplus {
-    margin: 1em auto 0 auto;
-    padding-top: 7em;
-    position: absolute;
-    width: 100%;
+    
+}
+
+#divKnow {
+    padding: 15em 0;
+
+    .buttons {
+
+        .button {
+            width: 12em;
+            height: 8em;
+        }
+    }
+}
+
+#divInformed, #divCurious, #divSkeptic {
+    .title {
+        width: 60%;
+        margin: auto;
+        padding: 7em 0 1em 0;
+    }
 }
 
 label {

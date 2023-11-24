@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-intro',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class IntroComponent {
 
+    name:string;
+
+    constructor(private router:Router) {};
+
+    setName(n:string) : void {
+        this.name = n;
+        console.log("holi");
+    } 
+
+    goToPage(route:string) {
+        this.router.navigate([route]);
+    }
 }

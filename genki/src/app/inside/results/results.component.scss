@@ -3,6 +3,9 @@ $off-white-60: #F2F1F199;
 $dark-red: #5B1B17;
 $light-blue: #8AA4D3;
 $light-blue-60: #8AA4D399;
+$green-40: #99B42F66;
+$light-blue-40: #8AA4D366;
+$orange-40: #E5652066;
 
 @font-face {
     font-family: 'Zilla Slab Medium';
@@ -62,11 +65,13 @@ $light-blue-60: #8AA4D399;
 
 .cards {
     height: 20em;
+    width: 80%;
     font-family: "Montserrat";
     font-size: 20px;
     display: flex;
     justify-content: space-between;
     padding: 0 3em;
+    margin: auto;
     
     .card {
         width: 14em;
@@ -74,6 +79,79 @@ $light-blue-60: #8AA4D399;
         border-radius: 20px;
         padding: 1em;
         margin: 0.5em;
+        position: relative;
+        
+        .circleImg {
+            width: 4em;
+            height: 4em;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+        }
+        
+        .title3 {
+            font-family: "Montserrat";
+            font-size: 25px;
+            color: black;
+            position: relative;
+            margin-top: 1em;
+            margin-left: 4em;
+        }
+        
+        .plain2 {
+            position: relative;
+            margin-top: 2em;
+            color: black;
+            font-size: 22px;
+        }
+        
+        .row {
+            display: flex;
+            
+            .elem {
+                width: 50%;
+            }
+            
+            #beplusImg {
+                margin-top: 1em;
+                background-image: url("../../../assets/beplus.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        .button {
+            font-family: "Montserrat";
+            display: block;
+            margin: 0 3em;
+            border-radius: 15px;
+            border: 1px solid black;
+            width: 6em;
+            font-size: 22px;
+            text-align: center;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            position: absolute;
+            bottom: 0px;
+            margin-bottom: 1.2em;
+        }
+    }
+
+    #first {
+        background-color: $green-40;
+    }
+
+    #second {
+        background-color: $light-blue-40;
+    }
+
+    #third {
+        background-color: $orange-40;
+    }
+    
+    #beplus {
+        background-color: white;
     }
 }
 

@@ -19,42 +19,19 @@
     </div>
 
     <div class="cards">
-        <div class="card" id="first">
-            <div class="circleImg"></div>
-            <div class="title3">food</div>
-            <div class="plain2">
-                <b>for your digestion</b><br>
-                you told us about your stomach pain
-            </div>
-            <div id="button">
-                <button class="button">more info</button>
-            </div>
-        </div>
-        <div class="card" id="second">
-            <div class="circleImg"></div>
-            <div class="title3">food</div>
-            <div class="plain2">
-                <b>for your oral health</b><br>
-                you told us about your breathe odor and that you follow a 
-                vegetarian diet
-            </div>
-            <div id="button">
-                <button class="button">more info</button>
+        <div *ngFor="let product of products">
+            <div class="card" id=img{{product.id}}>
+                <div class="circleImg" style="background-image: url(../../../assets/products/{{product.img}});"></div>
+                <div class="title3">{{product.name}}</div>
+                <div class="plain2">{{product.info}}</div>
+                <div id="button">
+                    <button class="button">more info</button>
+                </div>
             </div>
         </div>
-        <div class="card" id="third">
-            <div class="circleImg"></div>
-            <div class="title3">food</div>
-            <div class="plain2">
-                <b>for your stress</b><br>
-                you told us about your compulsive cravings
-            </div>
-            <div id="button">
-                <button class="button">more info</button>
-            </div>
-        </div>
+
         <div class="card" id="beplus">
-            <div class="circleImg"></div>
+            <div class="circleImg" style="background-image: url(../../../assets/products/beplus.png);"></div>
             <div class="title3">be plus match</div>
             <div class="row">
                 <div class="plain2 elem">

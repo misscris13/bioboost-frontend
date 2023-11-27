@@ -6,7 +6,7 @@ import { IntroComponent } from './intro/intro.component';
 import { InfoComponent } from './info/info.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { ResultsComponent } from './results/results.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -19,7 +19,8 @@ import { ResultsComponent } from './results/results.component';
     ResultsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   exports: [
     PlansComponent,

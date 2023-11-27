@@ -85,6 +85,7 @@ $orange-40: #E5652066;
             width: 4em;
             height: 4em;
             background-color: white;
+            background-size: contain;
             border-radius: 100%;
             position: absolute;
         }
@@ -126,7 +127,7 @@ $orange-40: #E5652066;
             display: block;
             margin: 0 3em;
             border-radius: 15px;
-            border: 1px solid black;
+            border: 0px solid;
             width: 6em;
             font-size: 22px;
             text-align: center;
@@ -138,15 +139,15 @@ $orange-40: #E5652066;
         }
     }
 
-    #first {
+    #img17 {
         background-color: $green-40;
     }
 
-    #second {
+    #img1 {
         background-color: $light-blue-40;
     }
 
-    #third {
+    #img12 {
         background-color: $orange-40;
     }
     

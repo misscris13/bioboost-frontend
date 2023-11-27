@@ -12,13 +12,11 @@ export class QuestionnaireComponent {
 
     constructor(private router:Router) {};
 
-    ngOnInit() {
-        this.onLoad();
-    }
-
-    onLoad() {
-        this.name = window.sessionStorage.getItem("name");
-    }
+    setName(n:string) : void {
+       
+        this.name = n;
+        window.sessionStorage.setItem("name", n);
+    } 
 
     goToPage(route:string) {
         this.router.navigate([route]);

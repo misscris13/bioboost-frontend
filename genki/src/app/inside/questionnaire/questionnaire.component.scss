@@ -87,6 +87,56 @@ input[type=text] {
     border-radius: 10px;
 }
 
+#divName {
+    
+    .title {
+        width: 15em;
+        margin: auto;
+    }
+
+    form {
+        text-align: center;
+        font-family: "Zilla Slab";
+        font-size: 24px;
+
+        input {
+            margin-top: 1em;
+            padding: 0.7em 1em;
+            font-size: 18px;
+            width: 15em;
+            font-family: "Montserrat";
+        }
+
+        input[type=text] {
+            border: 1px solid $off-white;
+            border-radius: 10px;
+        }
+
+        #data {
+            width: 30em;
+            text-align: center;
+            margin: auto;
+
+            input[type=checkbox] {
+                width: 2em;
+                height: 1em;
+                border: 1px solid $off-white;
+                border-radius: 8px;
+                background-color: $dark-red;
+            }
+        }
+
+        input[type=submit] {
+            border: 1px solid $light-blue-60;
+            border-radius: 8px;
+            background-color: $light-blue-60;
+            cursor: pointer;
+            font-size: 20px;
+            width: 8em;
+        }
+    }
+}
+
 #divBeplus {
     padding-top: 2em;
 }

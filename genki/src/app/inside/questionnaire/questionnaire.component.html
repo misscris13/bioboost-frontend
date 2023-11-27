@@ -1,6 +1,29 @@
-<div id="divBeplus" class="main" style="display:;">
+<div id="divName" class="main" style="display:;">
+    <p class="title">first of all, what's your name?</p>
+
+    <div id="nameForm">
+        <form id="name" autocomplete="off">
+            <div id="data">
+                <input type="checkbox" name="data">
+                <label for="data" id="dataLabel">
+                    by ticking this box, i agree that the
+                    personal data i communicate to genki will be processed
+                    to create my personalized genki food list and research 
+                    purposes.
+                </label><br><br>
+            </div>
+            <input #name type="text" name="name" placeholder="write here..." (change)="setName(name.value)"><br><br>
+        </form>
+        <div class="buttons">
+            <button class="button" onclick="showNext('divName', 'divBeplus')">confirm</button>
+        </div>
+    </div>
+</div>
+
+
+<div id="divBeplus" class="main" style="display:none;">
     <p class="title">
-        {{name}}, in your Be Plus experience, you already completed:
+        {{name.value}}, in your Be Plus experience, you already completed:
     </p>
     <div class="buttons">
         <button class="button" id="genomic" onclick="pressButton('genomic')">genomic test</button>
@@ -51,7 +74,7 @@
 
 <div id="divConfirm" class="main" style="display:none;">
     <p class="title">
-        great, {{name}}! now let's talk about your <b>objectives</b> ;)
+        great, {{name.value}}! now let's talk about your <b>objectives</b> ;)
     </p>
     
     <div class="buttons">
@@ -165,7 +188,7 @@
     </div>
 
     <div class="buttons">
-        <button class="button" onclick="showNext('divDigestion1', 'divDigestion2')">continue</button>
+        <button class="button" onclick="showNext('divDigestion1', 'divOral1')">continue</button>
     </div>
 </div>
 
@@ -210,7 +233,7 @@
     </div>
     
     <div class="buttons">
-        <button class="button" onclick="showNext('divOral1', 'divOral2')">continue</button>
+        <button class="button" onclick="showNext('divOral1', 'divStress1')">continue</button>
     </div>
 </div>
 
@@ -262,7 +285,7 @@
     </div>
     
     <div class="buttons">
-        <button class="button" onclick="showNext('divStress1', 'divStress2')">continue</button>
+        <button class="button" onclick="showNext('divStress1', 'divSituations')">continue</button>
     </div>
 </div>
 
@@ -286,7 +309,7 @@
     </div>
     
     <div class="buttons">
-        <button class="button" onclick="showNext('divStress2', 'divAllergies')">continue</button>
+        <button class="button" onclick="showNext('divStress2', 'divSituations')">continue</button>
     </div>
 </div>
 

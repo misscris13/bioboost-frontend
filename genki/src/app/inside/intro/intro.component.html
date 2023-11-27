@@ -14,26 +14,8 @@
             <input #name type="text" name="name" placeholder="write here..." (change)="setName(name.value)"><br><br>
         </form>
         <div class="buttons">
-            <button class="button" onclick="showNext('divName', 'divBeplus')">confirm</button>
+            <button class="button" onclick="showNext('divName', 'divKnow')">confirm</button>
         </div>
-    </div>
-</div>
-
-<div id="divBeplus" class="main" style="display:none;">
-    <p class="title">
-        {{name.value}}, in your Be Plus experience, you already completed:
-    </p>
-    <div class="buttons">
-        <button class="button" id="genomic" onclick="pressButton('genomic')">genomic test</button>
-        <button class="button" id="habits" onclick="pressButton('habits')">habits test</button>
-    </div>
-
-    <p class="title">
-        complete the <b>microbiome online test</b> to get a fully
-        customized experience
-    </p>
-    <div class="buttons">
-        <button class="button" onclick="showNext('divBeplus', 'divKnow')">start now</button>
     </div>
 </div>
 

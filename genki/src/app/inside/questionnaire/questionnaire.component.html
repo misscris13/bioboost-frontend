@@ -1,4 +1,22 @@
-<div id="divReady" class="main" style="display:;">
+<div id="divBeplus" class="main" style="display:;">
+    <p class="title">
+        {{name}}, in your Be Plus experience, you already completed:
+    </p>
+    <div class="buttons">
+        <button class="button" id="genomic" onclick="pressButton('genomic')">genomic test</button>
+        <button class="button" id="habits" onclick="pressButton('habits')">habits test</button>
+    </div>
+
+    <p class="title">
+        complete the <b>microbiome online test</b> to get a fully
+        customized experience
+    </p>
+    <div class="buttons">
+        <button class="button" onclick="showNext('divBeplus', 'divReady')">start now</button>
+    </div>
+</div>
+
+<div id="divReady" class="main" style="display:none;">
     <p class="title">
         ready to boost your energy?!
     </p>
